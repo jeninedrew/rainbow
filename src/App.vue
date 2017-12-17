@@ -1,23 +1,8 @@
 <template>
   <div id="app">
-		<header>
-		<nav class="nav nav--primary">
-			<router-link to="/booya">Booya</router-link>
-			<router-link to="/yup">Yup</router-link>
-			<router-link to="/um">Um</router-link>
-			<router-link to="/eek">Eek</router-link>
-			<router-link to="/been-done">Been Done</router-link>
-		</nav>
-		</header>
-		<main class="main">
-			<router-view/>
-		</main>
-		<footer>
-  		<router-link :to="{ name: 'HelloWorld' }">
-				<button class="button button--stretch button--dark">Chalk It!</button>
-			</router-link>
-			<button class="button button--stretch button--light button--add">ADD Q's</button>
-		</footer>
+		<router-view/>
+
+
 	</div>
 </template>
 
@@ -123,67 +108,5 @@ a {
 	display: flex;
   flex-direction: column;
 	text-align: center;
-	min-height: 100vh;
-}
-.main {
-	flex: 1;
-}
-.nav--primary  {
-	 display: flex;
-	a {
-		flex: 1;
-		color: #000;
-		font-weight: 600;
-		text-decoration: none;
-		text-transform: uppercase;
-		display: flex;
-		justify-content: center;
-		padding: $padding;
-		&:hover,
-		&:focus,
-		&:active {
-			transition-duration: $transition-duration;
-		}
-		&:nth-of-type(1) {
-			background-color: $green;
-			&:hover,
-			&:focus,
-			&:active {
-				background-color: $dark-green;
-			}
-		}
-		&:nth-of-type(2) {
-			background-color: $yellow;
-			&:hover,
-			&:focus,
-			&:active {
-				background-color: $dark-yellow;
-			}
-		}
-		&:nth-of-type(3) {
-			background-color: $orange;
-			&:hover,
-			&:focus,
-			&:active {
-				background-color: $dark-orange;
-			}
-		}
-		&:nth-of-type(4) {
-			background-color: $red;
-			&:hover,
-			&:focus,
-			&:active {
-				background-color: $dark-red;
-			}
-		}
-		&:nth-of-type(5) {
-			background-color: $blue;
-			&:hover,
-			&:focus,
-			&:active {
-				background-color: $dark-blue;
-			}
-		}
-	}
 }
 </style>

@@ -2,30 +2,7 @@
   <div id="to-dos">
 		<h1 v-once v-html="subHeading"></h1>
 
- 
-<div>
 
-		&hearts;
-
-		&quest;
-<!--
-		<br>
-		&rArr;
-
-		&rAarr; 
-
-		&xrarr; 
-
-		&xrArr; 
-
-
-		&Yscr;
-
-		&Nscr;
-
-		&Nopf;
--->
-	</div>
 
 	 </div>
 </template>
@@ -39,9 +16,6 @@ export default {
     }
   },
 	methods: {
-		fetchData() {
-        console.log(data);
-		}
 	}
 }
 </script>
