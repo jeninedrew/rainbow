@@ -1,6 +1,6 @@
 # Rainbow
 
-> Vue.js projects
+> Vue.js app
 
 ## Build Setup
 
