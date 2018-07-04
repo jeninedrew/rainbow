@@ -1,6 +1,6 @@
 # Rainbow
 
-> Vue.js projects
+> Playing with Vue.js
 
 ## Build Setup
 
